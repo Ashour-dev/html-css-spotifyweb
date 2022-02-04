@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+body>*{
+    float: left;
+    position: relative; /*per far funzionare la z-index*/
+}
+header{
+    height: 12vh;
+    width: 100%;
+    position: fixed;
+    background-color: #080b1270;
+    z-index: 1;
+}
+.sidebar{
+    height: 90vh;
+    width: 12%;
+    background-color: black;
+    z-index: 2;
+}
+.content{
+    height: 90vh;
+    width: 88%;
+    background-color: #141922;
+}
+.bott-bar{
+    width: 100%;
+    height: 10vh;
+    background-color: #282828;
+}
