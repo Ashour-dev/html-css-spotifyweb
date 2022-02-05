@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 .clearfix::after{
     content: "";
@@ -12,6 +13,10 @@ body>*{
     float: left;
     position: relative; /*per far funzionare la z-index*/
 }
+a{
+    text-decoration: none;
+}
+/* Header */
 header{
     height: 12vh;
     width: 100%;
@@ -19,12 +24,121 @@ header{
     background-color: #080b1270;
     z-index: 1;
 }
+header a{
+    color: white;
+    position: absolute;
+    top:25%;
+    right: 1.5%;
+    border: 1px solid white;
+    border-radius: 2em;
+    padding: .5rem 2rem;
+    font-size: small;
+}
+/* Sidebar */
 .sidebar{
     height: 90vh;
     width: 12%;
     background-color: black;
     z-index: 2;
+    padding: 1% 0;
 }
+.sidebar *{
+    color: gray;
+    font-size: small;
+}
+.logo{
+    width:60%;
+    margin-bottom: 15%;
+    margin-left: 0.9em;
+}
+.option{
+    margin-bottom: .3em;
+    padding-left:.9em;
+}
+.option:hover{
+    border-left: 2px solid #adff2f;
+    padding-left:.75em;
+}
+.option img{
+    width: 11%;
+}
+.option a{
+    position: relative;
+    bottom: .3em;
+}
+.playlists{
+    margin-left: 0.9em;
+    margin-top: 1em;
+}
+.add{
+    width: 2.5VW;
+    height: 2.5vw;
+    background-color: grey;
+    text-align: center;
+    line-height: 3vw;
+    display: inline-block;
+}
+.add i{
+    color: black;
+    width: 50%;
+    font-size: x-large;
+}
+.create{
+    margin: .8rem 0;
+}
+.create h4{
+    line-height: 2.5vw;
+    margin-left:.5rem ;
+}
+.create>*{
+    float: left;
+}
+.bottom{
+    position: absolute;
+    bottom: .3rem;
+    width: 90%;
+    padding-left: 0.5rem;
+}
+.bottom hr{
+    border-color: grey;
+}
+.playlists>h4{
+    color: white;
+}
+.playlists ul{
+    list-style: none;
+    line-height: 2;
+}
+.install img{
+    width: 1.1vw;
+}
+.install span{
+    line-height: 1.1vh;
+    position: relative;
+    bottom: .3rem;
+}
+.user>*{
+    float: left;
+    margin-top: .5rem;
+}
+.user span{
+    line-height: 3vh;
+    margin-left:.5rem ;
+    color: white;
+}
+.photo-user{
+    height: 1.5vw;
+    width: 1.5vw;
+    background-color: grey;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+}
+.photo-user img{
+    height: 1.6vw;
+    border-radius: 50%;
+}
+/* Content */
 .content{
     height: 90vh;
     width: 88%;
