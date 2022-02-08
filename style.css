@@ -16,7 +16,7 @@ body>*{
 a{
     text-decoration: none;
 }
-h1,h4{
+h1,h6{
     color: white;
 }
 span{
@@ -24,7 +24,7 @@ span{
 }
 /* Header */
 header{
-    height: 12vh;
+    height: 85px;
     width: 100%;
     position: fixed;
     background-color: #080b1270;
@@ -46,10 +46,10 @@ header a:hover{
 /* Sidebar */
 .sidebar{
     height: 90vh;
-    width: 12%;
     background-color: black;
     z-index: 2;
     padding: 1% 0;
+    overflow: hidden;
 }
 .sidebar *{
     color: gray;
@@ -63,19 +63,17 @@ header a:hover{
     margin-bottom: 15%;
     margin-left: 0.9em;
 }
+.small-logo{
+    width: 50%;
+    margin: 0 .72rem;
+    margin-bottom: .6rem;
+}
 .option{
     margin-bottom: .3em;
     padding-left:.9em;
 }
-.selected{
-    border-left: 2px solid #adff2f;
-    padding-left:.75em;
-}
-.selected a{
-    color: white;
-}
 .option img{
-    width: 11%;
+    width: 19px;
 }
 .option a{
     position: relative;
@@ -86,10 +84,9 @@ header a:hover{
     margin-top: 1em;
 }
 .add{
-    width: 2.5VW;
-    height: 2.5vw;
+    width: 38.4px;
+    height: 38.4px;
     background-color: grey;
-    line-height: 3vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,7 +99,7 @@ header a:hover{
     margin: .8rem 0;
 }
 .create h4{
-    line-height: 2.5vw;
+    line-height: 38.4px;
     margin-left:.5rem ;
 }
 .create>*{
@@ -119,9 +116,11 @@ header a:hover{
 }
 .bottom{
     position: absolute;
-    bottom: .3rem;
+    bottom: 0;
+    padding-bottom: .3rem;
     width: 90%;
     padding-left: 0.5rem;
+    background-color: black;
 }
 .bottom hr{
     border-color: grey;
@@ -134,7 +133,7 @@ header a:hover{
     line-height: 2;
 }
 .install img{
-    width: 1.1vw;
+    width: 17px;
 }
 .install span{
     line-height: 1.1vh;
@@ -146,38 +145,38 @@ header a:hover{
     margin-top: .5rem;
 }
 .user span{
-    line-height: 3vh;
-    margin-left:.5rem ;
+    line-height: 22px;
+    margin-left:.5rem;
     color: white;
 }
 .photo-user{
-    height: 1.5vw;
-    width: 1.5vw;
+    height: 22px;
+    width: 22px;
     background-color: grey;
     border-radius: 50%;
     display: inline-block;
     text-align: center;
 }
 .photo-user img{
-    height: 1.6vw;
+    width: 21px;
     border-radius: 50%;
 }
 /* Content */
 .content{
     height: 90vh;
-    width: 88%;
     padding-top:12vh;
-    padding-left: 1vw;
+    padding-left: 1rem;
     background-color: #141922;
     overflow-y: scroll;
 }
 .content ul{
     list-style: none;
     color: grey;
-    font-size: small;
+    font-size: x-small;
     display: flex;
-    justify-content: space-between;
-    width: 60%;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* width: 65%; */
     margin: 1.5vh auto;
 }
 .content li{
@@ -200,6 +199,7 @@ header a:hover{
 .items{
     margin: 4vh 0;
     display: flex;
+    flex-wrap: wrap;
     gap: 1vw;
 }
 .item{
@@ -216,7 +216,7 @@ header a:hover{
 .effect{
     position: absolute;
     width: 100%;
-    height: 25.2vh;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     justify-content: center;
@@ -230,15 +230,18 @@ header a:hover{
 .item img{
     width: 100%;
 }
-.item h4{
+.item h6{
     margin-top: 2vh;
     margin-bottom: 1vh;
 }
 .content span{
-    font-size: small;
+    font-size: x-small;
 }
 #Artist img{
     border-radius: 50%;
+}
+.content h1{
+    font-size: medium;
 }
 .content::-webkit-scrollbar{
     width: .6vw;
@@ -253,28 +256,27 @@ header a:hover{
 /* bottom bar */
 .bott-bar{
     width: 100%;
-    height: 10vh;
+    height: 71.35px;
     background-color: #282828;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
+    overflow-y: hidden;
 }
 .song{
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: grey;
-    width: 13vw;
 }
-.song *:hover{
+.song a:hover, .song i:hover {
     color: white;
 }
 .song a:hover{
     text-decoration: underline;
 }
 .song-des{
-    width: 6vw;
     line-height: .7;
 }
 .song h6{
@@ -288,12 +290,13 @@ header a:hover{
 .song img{
     width:18%;
 }
-.song i{
-    height: 100%;
+.icons{
+    display: flex;
+    gap: 1vw;
 }
 .mid{
     width: 40vw;
-    height: 8vh;
+    height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -353,7 +356,6 @@ header a:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 14vw;
     font-size: x-small;
 }
 .options .line{

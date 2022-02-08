@@ -1,0 +1,106 @@
+@media screen and (max-width:2560px) {
+    .item{
+        min-width:115px;
+    }
+    .song{
+        width: 200px;
+    }
+    .bott-bar .controls{
+        width: 215px;
+    }
+    .bott-bar .options{
+        width: 215px;
+    }
+    .content ul{
+        width: 65%;
+        gap: 1vw;
+    }
+    .song-des{
+        width: 89.7px;
+    }
+    .sidebar{
+        width: 184px;
+    }
+    .content{
+        width: calc(100% - 184px);
+    }
+    .selected{
+        border-left: 2px solid #adff2f;
+        padding-left:.75em;
+    }
+    body{
+        overflow-y: hidden;
+    }
+    .small-logo{
+        display: none;
+    }
+    .bott-bar span{
+        margin: auto 1vw;
+    }
+    /* .bottom{
+        width: 165px;
+    } */
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    .content ul{
+        width: 75%;
+    }
+}
+@media screen and (max-width:767px) {
+    .item{
+        min-width:170px;
+    }
+    .content ul{
+        width: 78%;
+        gap: 2.5vw;
+    }
+    .icons{
+    flex-direction: column;
+    }
+    .song-des{
+        width: 111.44px;
+    }
+}
+@media screen and (max-width:576px) {
+    .hidden, .sidebar a{
+        display: none;
+    }
+    .sidebar{
+        width: 40px;
+    }
+    .bottom{
+        width: 39px;
+    }
+    .content{
+        width: calc(100% - 40px);
+    }
+    .item{
+        min-width:210px;
+    }
+    .selected{
+        border-left: 0;
+    }
+    .install img{
+        margin-left: 0.1em;
+    }
+    .song{
+        width: 20vw;
+    }
+    .song-des{
+        width: 10vw;
+    }
+    .icons{
+        font-size:small ;
+    }
+    .bott-bar .options{
+        width: 35vw;
+    }
+    .small-logo{
+        display: inline-block;
+    }
+}
+/* @media screen and (max-height:535px) {
+    .playlists ul{
+        overflow-y: scroll;
+    }
+} */
