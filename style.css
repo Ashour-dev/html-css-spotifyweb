@@ -45,7 +45,7 @@ header a:hover{
 }
 /* Sidebar */
 .sidebar{
-    height: 90vh;
+    height: calc(100vh - 71.35px);
     background-color: black;
     z-index: 2;
     padding: 1% 0;
@@ -163,7 +163,7 @@ header a:hover{
 }
 /* Content */
 .content{
-    height: 90vh;
+    height: calc(100vh - 71.35px);
     padding-top:12vh;
     padding-left: 1rem;
     background-color: #141922;
@@ -203,7 +203,6 @@ header a:hover{
     gap: 1vw;
 }
 .item{
-    width: calc(70vw / 6);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -286,9 +285,6 @@ header a:hover{
     font-size: x-small;
     text-decoration: none;
     color: gray;
-}
-.song img{
-    width:18%;
 }
 .icons{
     display: flex;
